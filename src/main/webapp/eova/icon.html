@@ -1,0 +1,29 @@
+<%layout("/eova/layout/default.html",{'title' : 'Easy Object View Admin'}){%>
+
+<link rel="stylesheet" type="text/css" href="/easy/themes/default/text.css">
+<script type="text/javascript" src="/easy/plugins/jquery.text.js"></script>
+
+<input id="vv" name="vv" class="easyui-validatebox"
+       data-options="required:true,validType:'email'"/>
+
+<input id="bb" name="cc" class="easyui-combobox"/>
+
+<!-- <input id="gg" value="001"> -->
+<!-- <input id="kk" value="001"> -->
+
+<script type="text/javascript">
+    var combobox = $('#cc').combobox({
+        required: false
+    });
+
+    // 	var val = combobox.combobox('getValue');
+
+    // 	alert(val);
+
+    $('#kk').combo({
+        required: false,
+        multiple: false
+    });
+</script>
+
+<%}%>
